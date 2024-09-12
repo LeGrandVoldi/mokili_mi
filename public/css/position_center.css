@@ -1,0 +1,25 @@
+:root{
+    --color-1 : #F0F3F4 ;
+}
+.color_1{
+    color: var(--color-1);
+}
+.text-align-center{
+    text-align: center;
+}
+.HoriVerCenter{
+    /* display: grid;
+  place-items: center;   */
+
+    display: flex; justify-content: center; align-items: center;
+  
+}
+.horiLeft{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+input::placeholder{
+    color: red;
+}
+

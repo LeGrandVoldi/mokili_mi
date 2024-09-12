@@ -1,0 +1,139 @@
+body{
+    background-color: #F33A7890;
+    color: #ECF0F1;
+}
+.couleur2{
+    border: dotted #85929E90 0px;
+}
+.couleur3{
+    border-style: dotted;
+    border-color: #FDFEFE;
+    border-width: 3px;
+}
+.couleur1{
+    border: dotted #85929E90 0px;
+}
+.les_selections{
+    background-color: #F33A7880;
+}
+.select{
+    background-color: #F33A7880;
+    color: #F4F6F7;
+    border-color: #F0F3F450;
+}
+.les_selections_1{
+    background-color: #F33A7880;
+}
+.titre{
+    color: white;
+}
+
+.bloc_main_1{
+   background-color: #F33A7880;
+   border: solid #ECF0F150 1px;
+}
+#contenaire_modifier_anniversaire , #contenaire_modifier_sa , #contenaire_modifier_genre{
+    background-color: #F33A7880;
+    border: solid solid #ECF0F150 1px;
+}
+
+#main_1 ,#mon_bloc_anniv , #mon_bloc_sa , #mon_bloc_genre {
+    background-color: #F33A7885;
+    border-top: solid #ECF0F150 1px;
+    border-right: solid #ECF0F150 1px;
+    box-shadow: #6F2C5960 0px 0px 20px;
+}
+#Nav{
+    background-color: #E92374;
+}
+#voirMonProfil_2{
+    background-color: #F33A78;
+}
+.mesInfo_2_bloc_3_bloc{
+    background-color: #F33A7870;
+}
+.mesInfo{
+    border-bottom: solid #FBFCFC40 1px;
+}
+#voirEnvoyerMessageRemplis_main1{
+    background-color: #A31853;
+}
+.mes_messages_1_2{
+    background-color: #A31853;
+}
+.ses_messages_2_2{
+    background-color: #A31853;
+}
+.bloc_envois{
+    background-color: #762F4D;
+}
+.input{
+    background-color: #762F4D;
+    border: solid #ECF0F150 1px;
+    color: white;
+}
+.footerMS{
+    background-color: #762F4D;
+}
+.bodyMS{
+    background-color: #B82A66;
+}
+.bodyAllMS{
+    background-color: #566573;
+}
+.logo_mokili{
+    background-image: url('../../logos_MOkili_MI/mokili.png');
+}
+.emojionearea{
+    background-color: #762F4D;
+    border: solid #ECF0F150 1px;
+}
+.emojionearea-editor{
+    color: white;
+}
+
+/* nouveau today */
+#rechercheEtoile{
+    outline: none;
+    width: 95%;
+    border-radius: 100px;
+    background-color: #212F3C30;
+    border: solid #F0F3F450 1px;
+    text-align: center;
+    color: white;
+}
+#rechercheEtoile::placeholder{
+    color: #85929E;
+}
+
+.etoile_ajouter{
+    background-image: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 100px;
+    color: #F0F3F4;
+}
+.ligne_etoile{
+    border-bottom: solid #34495E20 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+#pe3_1_1,#pe3_1_2,#pe3_2{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#mon_bloc_etoile{
+
+    background-color: #F33A7885;
+    box-shadow: #6F2C5960 0px 0px 20px;
+}
+#contenaire_profil_etoile{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #F33A7880;
+    border: solid #ECF0F150 1px;
+}
+#pe2{
+    background-color: #F967A960;
+    color: white;
+}

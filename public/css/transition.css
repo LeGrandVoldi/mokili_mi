@@ -1,0 +1,4 @@
+.transition{
+    transition-property: background-color , border-top , border-right , border-width , border-color , color , padding , margin , font-size , z-index , visibility , border , height , width , right , left , top , position , box-shadow , opacity  , background-image , background-position , background-size , display ;
+    transition-duration:  0.3s;
+}

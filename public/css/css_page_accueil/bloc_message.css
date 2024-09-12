@@ -1,0 +1,194 @@
+#voirEnvoyerMessageRemplis_main1{
+    display: grid;
+    grid-template-rows: 80vh auto;
+    grid-template-areas: "toutLesMessages"
+                         "bloc_envois";
+}
+.toutLesMessages{
+    grid-area: toutLesMessages;
+
+}
+.bloc_envois{
+    border-bottom-left-radius: 10px;
+    
+    grid-area: bloc_envois;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "bloc_envois_1 bloc_envois_2 bloc_envois_3";
+}
+.bloc_envois_1{
+    grid-area: bloc_envois_1;
+}
+.bloc_envois_2{
+    grid-area: bloc_envois_2;
+}
+.bloc_envois_3{
+    grid-area: bloc_envois_3;
+}
+#envois_message{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background-color: #2C6FFD;
+}
+#upload_fichier{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background-color: #2C6FFD;
+}
+#envois_message:hover,#upload_fichier:hover{
+    width: 40px;
+    height: 40px;
+}
+.toutLesMessages{
+    position: relative;
+}
+.emojionearea-wrapper{
+  overflow-y: scroll; /* activer le défilement */
+  overflow-x: hidden;
+  scrollbar-width: 2px;
+}
+.emojionearea-wrapper::-webkit-scrollbar {
+  width: 1px; /* définir la largeur du scrollbar */
+}
+
+/* Personnalisation de la poignée du scrollbar pour les navigateurs basés sur WebKit */
+.emojionearea-wrapper::-webkit-scrollbar-thumb {
+  background-color: #2E405330; /* couleur de fond de la poignée */
+}
+.toutLesMessages{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow-y: scroll; /* activer le défilement */
+    overflow-x: hidden;
+    scrollbar-width: 2px; /* définir la largeur du scrollbar */
+    
+  }
+  /* Personnalisation de la barre de défilement pour les navigateurs basés sur WebKit (Chrome, Safari) */
+  .toutLesMessages::-webkit-scrollbar {
+    width: 1px; /* définir la largeur du scrollbar */
+  }
+  
+  /* Personnalisation de la poignée du scrollbar pour les navigateurs basés sur WebKit */
+  .toutLesMessages::-webkit-scrollbar-thumb {
+    background-color: #2E405330; /* couleur de fond de la poignée */
+  }
+  .mes_messages{
+   
+    margin-left: 100px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 9fr 1fr ;
+    grid-template-areas: "mes_messages_1 mes_messages_2";   
+  }
+  .mes_messages_1
+  {
+    grid-area: mes_messages_1;
+    background-color: #817BDF95;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: "mes_messages_1_1"
+                         "mes_messages_1_2"
+                         "mes_messages_1_3";
+  }
+  .mes_messages_1_1{
+    grid-area: mes_messages_1_1;
+    min-height: 20px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+  .mes_messages_1_2{
+    grid-area: mes_messages_1_2;
+    height: auto;
+    border-radius: 5px;
+    margin: 2px;
+    
+  }
+  .mes_messages_1_3{
+    grid-area: mes_messages_1_3;
+    min-height: 20px;
+  }
+  .mes_messages_2
+  {
+    grid-area: mes_messages_2;
+    
+  }
+  .ses_messages{
+    height: 200px;
+    margin-right: 100px;
+  
+    
+  }
+  .trait{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-color: #817BDF50;
+  }
+  .trait_{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-color: #FF309E50;
+  }
+  p{
+    
+  }
+  .stock_message{
+    border-radius: 5px;
+    font-family: cursive;
+    width: 40vw;
+    height: auto;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+ 
+  .stock_ses_message{
+    border-radius: 5px;
+    font-family: cursive;
+    width: 40vw;
+    height: auto;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+  .ok_2{
+    position: relative;
+    left: -17px;
+  }
+  .ses_messages{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 9fr ;
+    grid-template-areas: "ses_messages_1 ses_messages_2";   
+  }
+  .ses_messages_1{
+    grid-area: ses_messages_1;
+  }
+  .ses_messages_2{
+    font-family: cursive;
+    grid-area: ses_messages_2;
+    background-color: #FF309E80;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: "ses_messages_2_1"
+                         "ses_messages_2_2"
+                         "ses_messages_2_3";
+  }
+  .ses_messages_2_1{
+    grid-area: ses_messages_2_1;
+    min-height: 20px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+  .ses_messages_2_2{
+    grid-area: ses_messages_2_2;
+    border-radius: 5px;
+    margin: 2px;
+    
+    
+  }
+  .ses_messages_2_3{
+    grid-area: ses_messages_2_3;
+    min-height: 20px;
+  }

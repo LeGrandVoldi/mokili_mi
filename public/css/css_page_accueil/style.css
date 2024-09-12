@@ -1,0 +1,1175 @@
+@font-face {
+    font-family: "ChelseaMarket-Regular";
+    src: url("../../fonts/chelsea_market/ChelseaMarket-Regular.ttf"); }
+body{
+    margin: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "header"
+                         "main";
+}
+
+
+/* .emojionearea-filters{
+    background-color: red;
+} */
+.emojionearea-wrapper{
+    position: absolute;
+    top: 50px;
+} 
+.emojionearea .emojionearea-picker.emojionearea-picker-position-top {
+    
+    right: -14px; }
+ 
+.emojionearea-scroll-area{
+    overflow-y: scroll; /* activer le défilement */
+    overflow-x: hidden;
+    scrollbar-width: 2px;
+  }
+  .emojionearea-scroll-area::-webkit-scrollbar {
+    width: 1px; /* définir la largeur du scrollbar */
+  }
+  
+  /* Personnalisation de la poignée du scrollbar pour les navigateurs basés sur WebKit */
+  .emojionearea-scroll-area::-webkit-scrollbar-thumb {
+    background-color: #2E405330; /* couleur de fond de la poignée */
+  }
+#voirEnvoyerMessageRemplis_main3{
+    display: none;
+    
+}
+#touche_envoyer1{
+    height: 60px;
+}
+header{
+    grid-area: header;
+    height: 10vh;
+    display: grid;
+    grid-template-areas: "header_1 header_2";
+}
+#header_1{
+    width: 80vw;
+    display: grid;
+    grid-template-areas: "header_1_1 header_1_2";
+ 
+}
+#header_1_1{
+    grid-area: header_1_1;
+    width: 20vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "couleur1 couleur2 couleur3";
+    
+}
+#header_1_2{
+    grid-area: header_1_2;
+    width: 60vw;
+    text-transform: uppercase;
+    font-family: "ChelseaMarket-Regular";
+    font-size: 20px;
+    visibility: hidden;
+}
+#header_2{
+    
+    width: 20vw;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 10vh;;
+    grid-template-areas: "header_2_1 header_2_2 header_2_3";
+}
+#header_2_1{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 20px;
+    text-transform: uppercase;
+
+    font-family: "ChelseaMarket-Regular";
+}
+
+main{
+    grid-area: main;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 90vh;
+    grid-template-areas: "main_1 main_2";
+}
+#main_1{
+    width: 80vw;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.bloc_main_1{
+   
+    width: 98%;
+    height: 98%;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: "bloc_main_1_header"
+                         "bloc_main_1_main";
+}
+#voirEnvoyerMessageRemplis{
+    display: none;
+    width: 98%;
+    height: 98%;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas: "voirEnvoyerMessageRemplis_main1 voirEnvoyerMessageRemplis_main2";
+}
+#voirEnvoyerMessageRemplis_main1{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#voirEnvoyerMessageRemplis_main2{
+    background-color: #F7F9F9;
+    border: solid #5D6D7E50 1px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: grid;
+    grid-template-rows: 80vh 1fr;
+    grid-template-areas: "voirEnvoyerMessageRemplis_main2_1"
+                         "voirEnvoyerMessageRemplis_main2_2";
+}
+#voirEnvoyerMessageRemplis_main2_1{
+    border-top-right-radius: 20px;
+    overflow-y: scroll; /* activer le défilement */
+    overflow-x: hidden;
+    scrollbar-width: 2px; /* définir la largeur du scrollbar */
+}
+
+/* Personnalisation de la barre de défilement pour les navigateurs basés sur WebKit (Chrome, Safari) */
+#voirEnvoyerMessageRemplis_main2_1::-webkit-scrollbar {
+    width: 1px; /* définir la largeur du scrollbar */
+}
+
+/* Personnalisation de la poignée du scrollbar pour les navigateurs basés sur WebKit */
+#voirEnvoyerMessageRemplis_main2_1::-webkit-scrollbar-thumb {
+    background-color: #2E405330; /* couleur de fond de la poignée */
+}
+#voirEnvoyerMessageRemplis_main2_2{
+    border-bottom-right-radius: 20px;
+    background-color: #5D6D7E20;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: grid;
+    grid-template-areas: "bloc_recherche_saisie bloc_recherche";
+}
+
+
+
+#voirEnvoyerMessageRemplis_main2_2{
+    background-color: #5D6D7E20;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: grid;
+    grid-template-areas: "bloc_recherche_saisie bloc_recherche";
+}
+
+
+#bloc_recherche_saisie{
+    margin: 5px;
+}
+.ligneMessage{
+    border-bottom: solid #5D6D7E20 1px;
+    height: 10vh;
+}
+#bloc_main_1_header{
+    grid-area: bloc_main_1_header;
+}
+#bloc_main_1_main{
+    grid-area: bloc_main_1_main;
+}
+#main_2{
+    width: 20vw;
+    
+ 
+}
+.les_selections{
+   
+    width: 17vw;
+    height: 50px;
+    border-radius: 100px;
+    border: solid #85929E90 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: grid;
+    grid-template-areas: "voir_1 voir_2";
+    
+}
+
+.voir_1{
+   grid-area: voir_1;
+   background-color: #9B59B6;
+   width: 45px;
+   height: 45px;
+   border-radius: 100px;
+   color: white;
+   font-family: monospace;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   
+}
+.voir_2{
+    grid-area: voir_2;
+    width: 150px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+    
+}
+.boule_bleu{
+    background-color: #2C6FFD;
+}
+.boule_vert{
+    background-color: #45FA29;
+}
+.boule_rouge{
+    background-color: #FA3229;
+}
+.active{
+    border: solid #A18EFF 5px;
+   
+}
+.premier_boule {
+    font-family: "ChelseaMarket-Regular";
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    }
+#titre_etoiles{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}  
+#footer{
+    width: 20vw;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+#img_mokili{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 110px;
+  height: 110px;
+}
+.couleur1{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.couleur2{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.couleur3{
+    background-color: #FF8EAB;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.couleur1:hover,.couleur2:hover,.couleur3:hover{
+    width: 35px;
+    height: 35px;
+}
+/* partie Nav */
+#Nav
+{
+    
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 2;
+    border-left: solid #3336F660 2px;
+    width: 30vw;height: 100vh;
+    position: relative;
+    top: 0;
+    margin-top: -100vh;
+    right: -100vw;
+    display: grid;
+    grid-template-areas: "Nav_header"
+                         "Nav_main"
+                         "Nav_footer";
+    display: none;                     
+                         
+}
+#Nav_header{
+    height: 10vh;
+}
+#Nav_main{
+    height: 70vh;
+}
+#Nav_footer{
+    height: 20vh;
+}
+#img_mokili_1{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 110px;
+    height: 110px;
+}
+h2{
+    
+    text-transform: uppercase;
+
+    font-family: "ChelseaMarket-Regular";
+}
+.les_selections_1{
+   
+    width: 20vw;
+    height: 50px;
+    border-radius: 100px;
+    border: solid #85929E90 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: grid;
+    grid-template-areas: "voir_1 voir_2";
+    
+}
+
+.voir_1_1{
+   grid-area: voir_1;
+   
+   width: 45px;
+   height: 45px;
+   border-radius: 100px;
+   color: white;
+   font-family: monospace;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   
+}
+.voir_2_1{
+    grid-area: voir_2;
+    width: 150px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 15px;
+    
+}
+#voirMonProfil{
+   
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "voirMonProfil_1 voirMonProfil_2";
+                         
+}
+#voirMonProfil_2{
+
+    overflow-y: auto; /* activer le défilement */
+    scrollbar-width: 2px; /* définir la largeur du scrollbar */
+}
+
+/* Personnalisation de la barre de défilement pour les navigateurs basés sur WebKit (Chrome, Safari) */
+#voirMonProfil_2::-webkit-scrollbar {
+    width: 1px; /* définir la largeur du scrollbar */
+}
+
+/* Personnalisation de la poignée du scrollbar pour les navigateurs basés sur WebKit */
+#voirMonProfil_2::-webkit-scrollbar-thumb {
+    background-color: #2C6FFD; /* couleur de fond de la poignée */
+}
+.titre_mesInfo{
+    font-size: 16px;
+    font-style: italic;
+}
+#voirMonProfil_1{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: "header_photo_profil"
+                         "bloc_photo_profil";
+    
+}
+#header_photo_profil{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas: "header_photo_profil_1 header_photo_profil_2";
+}
+#header_photo_profil_1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20px;
+}
+#header_photo_profil_2{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 20px;
+}
+#bloc_modifier_photo{
+    background-color: #2C6FFD;
+    width:50px;
+    height:50px;
+    border-radius:500px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#bloc_photo_profil{
+    
+}
+#photo_profil{
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: #F73A57;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 1000px;
+    background-position: center;
+    background-size: cover;
+}
+.etoile_profil{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#voirMonProfil_2{
+    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.mesInfo{
+
+    height: 20vh;
+    
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "mesInfo_1"
+                         "mesInfo_2";
+}
+.mesInfo_1{
+    grid-area: mesInfo_1;
+    display: grid;
+    grid-template-areas: "mesInfo_1_1 mesInfo_1_2";
+    
+}
+.mesInfo_1_1{
+    grid-area: mesInfo_1_1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+}
+.mesInfo_1_2{
+    grid-area: mesInfo_1_2;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10px;
+}
+.mesInfo_2{
+    grid-area: mesInfo_2;
+    margin: 10px;
+    
+}
+.mesInfo_2_bloc{
+    width: 100%;
+    height: 6vh;
+    display: grid;
+    grid-template-columns: 1fr 10fr 16fr;
+    grid-template-areas: "mesInfo_2_bloc_1 mesInfo_2_bloc_2 mesInfo_2_bloc_3";
+}
+.mesInfo_2_bloc_1{
+    grid-area: mesInfo_2_bloc_1;
+    background-color: #F73A57;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mesInfo_2_bloc_2{
+    grid-area: mesInfo_2_bloc_2;
+    height: 100%;
+}
+.mesInfo_2_bloc_2_bloc{
+    background-color: #5D6D7E50;
+    height: 2px;
+    width: 100%;
+    
+}
+.mesInfo_2_bloc_3_bloc{
+    
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+.mesInfo_2_bloc_3{
+    grid-area: mesInfo_2_bloc_3;
+    background-color: #5D6D7E50;
+    height: 100%;
+    padding: 2px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.mesInfo:hover{
+
+    height: 25vh;
+   
+}
+/* modifier mon anniversaire */
+/* select{
+    width: 15vw;
+    height: 30px;
+    border-radius: 7px;
+    outline: none;
+} */
+#bloc_modifier_anniversaire{
+    z-index:3;
+    height:100vh;
+    width: 100vw;
+    background-color:#2E405330;
+    margin-top: -100vh;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+#mon_bloc_anniv{
+    border-radius: 20px;
+    width: 30vw;
+    height: 60vh;
+    padding: 10px;
+}
+#contenaire_modifier_anniversaire{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-areas: "anniv_1"
+                         "anniv_2"
+                         "anniv_3";
+}
+#anniv_1{
+    background-color: #2C6FFD;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#anniv_2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "anniv_2_1"
+                         "anniv_2_2"
+                         "anniv_2_3";
+}
+#anniv_2_1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "anniv_2_1_1 anniv_2_1_2";
+}
+#anniv_2_2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "anniv_2_2_1 anniv_2_2_2";
+}
+#anniv_2_3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "anniv_2_3_1 anniv_2_3_2";
+}
+/* modifier mon situation amoureux */
+#bloc_modifier_sa{
+    z-index:3;
+    height:100vh;
+    width: 100vw;
+    background-color:#2E405330;
+    margin-top: -100vh;
+    opacity: 0;
+    visibility: hidden;
+}
+#mon_bloc_sa{
+    border-radius: 20px;
+    width: 30vw;
+    height: 60vh;
+    padding: 10px;
+}
+#contenaire_modifier_sa{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "sa_1"
+                         "sa_2"
+                         "sa_3";
+}
+#sa_1{
+    background-color: #F73A57;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#sa_2_1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "sa_2_1_1 sa_2_1_2";
+}
+/* modifier mon profil etoile */
+#bloc_profil_etoile{
+    z-index:3;
+    height:100vh;
+    width: 100vw;
+    background-color:#2E405330;
+    margin-top: -100vh;
+    opacity: 0;
+    visibility: hidden;
+}
+#mon_bloc_etoile{
+    border-radius: 20px;
+    width: 30vw;
+    height: 80vh;
+    padding: 10px;
+}
+#contenaire_profil_etoile{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border: solid white 0px;
+    display: grid;
+    grid-template-rows: 5fr 1fr 7fr;
+    grid-template-areas: "pe1"
+                         "pe2"
+                         "pe3";
+}
+#pe1{
+    
+}
+#leurPhoto{
+    width: 150px;
+    height: 150px;
+    border-radius: 500px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#pe2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ChelseaMarket-Regular;
+}
+#pe3{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "pe3_1"
+                         "pe3_2";
+}
+#pe3_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "pe3_1_1 pe3_1_2";
+}
+#pe3_1_1{
+    border-radius: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ppp_1"
+                         "ppp_2";
+}
+#ppp_1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+}
+#ppp_2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#pe3_1_2{
+    border-radius: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ppp_3"
+                         "ppp_4";
+}
+#ppp_3{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10px;
+}
+#ppp_4{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#pe3_2{
+
+    border-radius: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ppp_5"
+                         "ppp_6";
+}
+#ppp_5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ppp_6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* modifier mon Genre */
+#bloc_modifier_genre{
+    z-index:3;
+    height:100vh;
+    width: 100vw;
+    background-color:#2E405330;
+    margin-top: -100vh;
+    opacity: 0;
+    visibility: hidden;
+}
+#mon_bloc_genre{
+    border-radius: 20px;
+    width: 30vw;
+    height: 60vh;
+    background-color: #f7f7f7;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    padding: 10px;
+}
+#contenaire_modifier_genre{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "genre_1"
+                         "genre_2"
+                         "genre_3";
+}
+#genre_1{
+    background-color: #45FA29;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#genre_2_1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "genre_2_1_1 genre_2_1_2";
+}
+.mod{
+    font-family: "ChelseaMarket-Regular";
+    font-size: 20px;
+}
+/* partie responsive */
+
+/* DEBUT RESPONSIVE MESSAGERIE */
+@media (max-width: 1180px){
+   
+    #voirEnvoyerMessageRemplis{
+       
+        grid-template-columns: 5fr 5fr;
+        grid-template-areas: "voirEnvoyerMessageRemplis_main1 voirEnvoyerMessageRemplis_main2";
+    }
+    .emojionearea{
+        width: 30vw;
+        
+    }
+    .stock_message , .stock_ses_message{
+       
+        width: 25vw;
+      }
+}
+@media (max-width: 790px){
+    #voirEnvoyerMessageRemplis{
+       
+        grid-template-columns: 5fr 5fr;
+        grid-template-areas: "voirEnvoyerMessageRemplis_main1 voirEnvoyerMessageRemplis_main2";
+    }
+    .emojionearea{
+        width: 30vw;
+        
+    }
+    .stock_message , .stock_ses_message{
+       
+        width: 35vw;
+      }
+      .mes_messages{
+   
+        margin-left: 50px;
+          
+      }
+      .ses_messages{
+   
+        margin-right: 50px;
+          
+      }
+}
+@media (max-width: 700px){
+    .mes_messages{
+   
+        margin-left: 5px;
+          
+      }
+      .ses_messages{
+   
+        margin-right: 5px;
+          
+      }
+}
+@media (max-width: 650px){
+     #voirEnvoyerMessageRemplis_main2{
+        display: none;
+        width: 0;
+        height: 0;
+     }
+     #voirEnvoyerMessageRemplis{
+       
+        grid-template-columns: 8fr 2fr;
+        grid-template-areas: "voirEnvoyerMessageRemplis_main1 voirEnvoyerMessageRemplis_main3";
+    }
+    #voirEnvoyerMessageRemplis_main3{
+        grid-area: voirEnvoyerMessageRemplis_main3;
+        display: block;
+        background-color: #F7F9F9;
+        border: solid #5D6D7E50 1px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        
+    }
+    #voirEnvoyerMessageRemplis_main3{
+        background-color: #F7F9F9;
+        border: solid #5D6D7E50 1px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: grid;
+        grid-template-rows: 80vh 1fr;
+        grid-template-areas: "voirEnvoyerMessageRemplis_main3_1"
+                             "voirEnvoyerMessageRemplis_main3_2";
+    }
+    #voirEnvoyerMessageRemplis_main3_1{
+        border-top-right-radius: 20px;
+
+    }
+    #voirEnvoyerMessageRemplis_main3_1{
+        overflow-y: scroll; /* activer le défilement */
+        overflow-x: hidden;
+        scrollbar-width: 2px; /* définir la largeur du scrollbar */
+    }
+    
+    /* Personnalisation de la barre de défilement pour les navigateurs basés sur WebKit (Chrome, Safari) */
+    #voirEnvoyerMessageRemplis_main3_1::-webkit-scrollbar {
+        width: 1px; /* définir la largeur du scrollbar */
+    }
+    
+    /* Personnalisation de la poignée du scrollbar pour les navigateurs basés sur WebKit */
+    #voirEnvoyerMessageRemplis_main3_1::-webkit-scrollbar-thumb {
+        background-color: #2E405330; /* couleur de fond de la poignée */
+    }
+    #voirEnvoyerMessageRemplis_main3_2{
+        background-color: #5D6D7E20;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        display: grid;
+        grid-template-areas: "bloc_recherche_saisie bloc_recherche";
+        border-bottom-right-radius: 20px;
+    }
+    .lignesMessages_{
+        height: 15vh;
+        background-color: #E5E8E8;
+        margin: 2px;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: "lignesMessages_1"
+                             "lignesMessages_2"
+                             "lignesMessages_3"
+    }
+    .lignesMessages_1{
+        grid-area: lignesMessages_1;
+        display: grid;
+        grid-template-areas: "lignesMessages_1_1 lignesMessages_1_2";
+    }
+    .lignesMessages_1_1{
+        grid-area: lignesMessages_1_1;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: 2px;
+    }
+    .lignesMessages_1_2{
+        grid-area: lignesMessages_1_2;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-right: 2px;
+    }
+    .lignesMessages_2{
+        grid-area: lignesMessages_2;
+    }
+    .lignesMessages_3{
+        font-size: 13px;
+        grid-area: lignesMessages_3;
+    }
+    
+    .lignesMessages_3{
+        padding: 2px;
+        white-space: nowrap;
+        width: auto;
+        overflow-y: hidden; /* activer le défilement */
+        overflow-x: scroll;
+        scrollbar-width: 2px; /* définir la largeur du scrollbar */
+    }
+    
+    /* Personnalisation de la barre de défilement pour les navigateurs basés sur WebKit (Chrome, Safari) */
+    .lignesMessages_3::-webkit-scrollbar {
+        height: 1px; /* définir la largeur du scrollbar */
+    }
+    
+    /* Personnalisation de la poignée du scrollbar pour les navigateurs basés sur WebKit */
+    .lignesMessages_3::-webkit-scrollbar-thumb {
+        background-color: #2E405330; /* couleur de fond de la poignée */
+    }
+    .ligneProfil{
+        width: 50px;
+        height: 50px;
+        background-color: #34495e;
+        border-radius: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .emojionearea{
+        width: 40vw;
+        
+    }
+    .stock_message , .stock_ses_message{
+       
+        width: 60vw;
+      }
+}
+
+@media (max-height: 600px){
+    .lignesMessages_{
+        height: 20vh;
+       
+    }
+    .ligneProfil{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 535px){
+    .stock_message , .stock_ses_message{
+       
+        width: 60vw;
+      }
+}
+@media (max-width: 800px){
+    .emojionearea .emojionearea-picker.emojionearea-picker-position-top {
+    
+        right: -100px; }
+}
+@media (max-width: 510px){
+    .emojionearea .emojionearea-picker.emojionearea-picker-position-top {
+    
+        right: -140px; }
+}
+@media (max-width: 355px){
+    .emojionearea .emojionearea-picker.emojionearea-picker-position-top {
+    
+        right: -120px; }
+}
+/* FIN RESPONSIVE MESSAGERIE */
+
+@media (max-width: 1080px) {
+    #main_1{
+        width: 100vw;
+    }
+    #main_2{
+        display: none;
+
+    }
+    #main_2{
+        width: 0vw;
+    }
+    .les_selections{
+        width: 60px;
+    }
+    .voir_2{
+        font-size: 0px;
+    }
+    #img_mokili{
+        width: 0;
+    }
+    #Nav{
+        display: block;
+    }
+}
+@media (max-width: 1030px) {
+    #header_1_2{
+        visibility: visible;
+    }
+    #header_2_1,#header_2_2{
+        visibility: hidden;
+    }
+    #header_2{
+    
+        width: 20vw;
+        height: 10vh;
+        display: grid;
+        grid-template-columns: 0 0 20vw;
+        grid-template-areas: "header_2_1 header_2_2 header_2_3";
+    }
+    #header_2_3{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+    
+}
+@media (max-width: 1000px){
+    #mon_bloc_anniv,#mon_bloc_sa ,#mon_bloc_genre,#mon_bloc_etoile{
+        width: 40vw;
+    }
+}
+@media (max-width: 925px){
+    #Nav{
+        width: 40vw;
+         
+    }
+    .les_selections_1{
+        width: 30vw;
+    }
+}
+@media (max-width: 790px){
+    #mon_bloc_anniv,#mon_bloc_sa ,#mon_bloc_genre,#mon_bloc_etoile{
+        width: 50vw;
+    }
+}
+@media (max-width: 780px){
+    
+    #voirMonProfil{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "voirMonProfil_1"
+                             "voirMonProfil_2";
+                             
+    }
+    #voirMonProfil_2{
+             border-top-left-radius: 20px;
+             border-bottom-left-radius: 20px;
+             border-top: solid #2C6FFD20 1px;
+             padding-top: 10px;
+             box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    .mesInfo_2_bloc_2_bloc{
+        height: 1px;
+    }
+    .mesInfo_2_bloc_3{
+        padding: 1px;
+    }
+    .titre_mesInfo{
+        font-size: 14px;
+        font-style: italic;
+    }
+    .mesInfo{
+        height: 13vh;
+    }
+    .mesInfo:hover{
+        height: 14vh;
+    }
+    .mesInfo_2_bloc_3{
+        height: 35px;
+    }
+    #photo_profil{
+       margin-bottom: 30px;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+
+
+@media (max-width: 660px){
+    #main_1{
+        width: 88vw;
+    }
+    #main_2{
+        width: 12vw;
+    }
+}
+@media (max-width: 625px){
+    #Nav{
+        width: 50vw;
+    }
+    .les_selections_1{
+        width: 40vw;
+    }
+}
+@media (max-width: 610px){
+    #mon_bloc_anniv,#mon_bloc_sa ,#mon_bloc_genre,#mon_bloc_etoile{
+        width: 60vw;
+    }
+}
+@media (max-width: 525px){
+    #main_1{
+        width: 100vw;
+    }
+    #main_2{
+        width: 0vw;
+        visibility: hidden;
+    }
+    .les_selections{
+        width: 0px;
+    }
+    .couleur1,.couleur2,.couleur3{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width: 480px){
+    #Nav{
+        width: 70vw;
+    }
+    .les_selections_1{
+        width: 60vw;
+    }
+    #mon_bloc_etoile{
+        width: 90vw;
+        height: 70vh;
+    }
+}
+@media (max-width: 400px){
+    #mon_bloc_anniv,#mon_bloc_sa ,#mon_bloc_genre{
+        width: 70vw;
+        height: 50vh;
+    }
+    #mon_bloc_etoile{
+        width: 90vw;
+        height: 70vh;
+    }
+    
+}
+@media (min-height: 850px ) and (max-width: 500px){
+    #mon_bloc_anniv,#mon_bloc_sa ,#mon_bloc_genre{
+        height: 40vh;
+    }
+}
+
+

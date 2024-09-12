@@ -1,0 +1,32 @@
+body{
+    background-color: #f8fafd;
+    display: grid;
+    grid-template-areas: "part1"
+                         "part2";
+}
+#part1{
+    height: 22vh;
+    
+}
+#part2{
+    height: 78vh;
+    padding: 15px;
+}
+#bloc_logo{
+    width: 150px;
+    height: 150px;
+    background-image: url('../logos_MOkili_MI/logo_verification.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#bloc_contenue{
+    background-color: white;
+    height: 70vh;
+    border-radius: 20px;
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

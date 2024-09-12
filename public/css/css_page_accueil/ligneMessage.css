@@ -1,0 +1,127 @@
+.ligneMessage{
+   
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-areas: "ligneMessage_1 ligneMessage_2 ligneMessage_3";
+}
+
+.ligneMessage_1{
+    grid-area: ligneMessage_1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ligneMessage_1_date"
+                         "ligneMessage_1_enLigne";
+}
+.ligneMessage_1_date{
+    grid-area: ligneMessage_1_date;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.ligneMessage_1_enLigne{
+    grid-area: ligneMessage_1_enLigne;
+}
+.ligneMessage_2{
+    grid-area: ligneMessage_2;
+    display: grid;
+    grid-template-rows: 5vh 5vh;
+    grid-template-areas: "ligneMessage_2_nomUser"
+                         "ligneMessage_2_messageUser";
+}
+.ligneMessage_2_nomUser{
+    grid-area: ligneMessage_2_nomUser;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.ligneMessage_2_messageUser{
+    grid-area: ligneMessage_2_messageUser;
+}
+.ligneMessage_2_messageUser{
+    overflow-x: scroll; /* activer le défilement */
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+/* Personnalisation de la barre de défilement pour les navigateurs basés sur WebKit (Chrome, Safari) */
+.ligneMessage_2_messageUser::-webkit-scrollbar {
+     /* définir la largeur du scrollbar */
+    height: 1px;
+    width: 1px;
+}
+
+/* Personnalisation de la poignée du scrollbar pour les navigateurs basés sur WebKit */
+.ligneMessage_2_messageUser::-webkit-scrollbar-thumb {
+    background-color: #7F96C7; /* couleur de fond de la poignée */
+}
+
+.ligneMessage_3{
+    grid-area: ligneMessage_3;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 5px;
+}
+.ligneMessage_3_photo{
+    background-color: #34495e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 1000px;
+}
+
+.ligne_etoile{
+    display: grid;
+    grid-template-areas: "le_1 le_2 le_3";
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.ligne_etoile:hover{
+    background-color: #B7D6F530;
+}
+.le_1{
+    grid-area: le_1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+    
+}
+.le_2{
+    grid-area: le_2;
+    text-align: center;
+}
+.le_3{
+    grid-area: le_3;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 10px;
+}
+.leur_photo{
+    width: 65px;
+    height: 65px;
+    border-radius: 500px;
+    background-position: center;
+    background-size: cover;
+    
+}
+.image{
+    border: solid #AEB6BF60 1px;
+}
+.scroll-etoile{
+    overflow-y: scroll; /* activer le défilement */
+}
+/* Personnalisation de la barre de défilement pour les navigateurs basés sur WebKit (Chrome, Safari) */
+.scroll-etoile::-webkit-scrollbar {
+    /* définir la largeur du scrollbar */
+   width: 1px;
+}
+
+/* Personnalisation de la poignée du scrollbar pour les navigateurs basés sur WebKit */
+.scroll-etoile::-webkit-scrollbar-thumb {
+   background-color: #1C2833; /* couleur de fond de la poignée */
+}
