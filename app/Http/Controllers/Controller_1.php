@@ -19,7 +19,7 @@ use PhpParser\Node\Stmt\TryCatch;
 class Controller_1 extends Controller
 {
     public function error($error){
-        
+        $a = "voldi";
         return view('page_non-trouver');
     }
     public function index(Request $request){
